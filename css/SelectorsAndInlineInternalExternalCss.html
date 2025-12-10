@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* internal css example: */
+      p {
+        color: green;
+        font-size: 16px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      /* class selectors example: */
+      .container {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px 0;
+      }
+      .title {
+        color: purple;
+        font-size: 20px;
+      }
+      .description {
+        font-style: italic;
+      }
+      /* id selector example: */
+      #uniqueParagraph {
+        background-color: lightgray;
+        padding: 20px 30px 20px 30px;
+      }
+      /* element selector example: */
+      h1 {
+        text-align: center;
+      }
+      /* group selector example: */
+      h2,
+      h3 {
+        font-family: "Courier New", Courier, monospace;
+      }
+      p,
+      h1,
+      div {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline css example: -->
+    <h1 style="color: blue; font-family: Arial, sans-serif">
+      Welcome to My Website
+    </h1>
+
+    <p>
+      This is a sample paragraph to demonstrate CSS selectors and inline,
+      internal, and external CSS.
+    </p>
+
+    <!-- selecters example: -->
+    <!-- element selector -->
+    <div class="container">
+      <!-- class selector example: -->
+      <h2 class="title">Container Title</h2>
+      <p class="description">This paragraph is inside a container div.</p>
+    </div>
+    <!-- /* ID selector example: */ -->
+    <p id="uniqueParagraph">This paragraph has a unique ID.</p>
+  </body>
+</html>
