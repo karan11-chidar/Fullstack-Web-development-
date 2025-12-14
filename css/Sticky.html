@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Just for scroll space */
+    .space {
+      height: 600px;
+      background: #eee;
+    }
+
+    /* Parent container */
+    .parent {
+      height: 500px;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+
+    /* Sticky element */
+    .sticky-box {
+      background: gold;
+      padding: 10px;
+      position: sticky;
+      top: 0; /* ⭐ MOST IMPORTANT */
+    }
+
+    .content {
+      height: 800px;
+      background: #ddd;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="space">Scroll Down ⬇️</div>
+
+  <div class="parent">
+    <div class="sticky-box">
+      I am STICKY (parent ke andar)
+    </div>
+
+    <div class="content">
+      Parent ka content<br><br>
+      Scroll karte raho...
+    </div>
+  </div>
+
+  <div class="space">Scroll Up ⬆️</div>
+
+</body>
+</html>
