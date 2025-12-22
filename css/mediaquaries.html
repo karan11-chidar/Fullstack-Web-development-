@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: aliceblue;
+        }
+        .container{
+            border: 1px solid black;
+            width: 90vw;
+            margin: 10px;
+            display: flex;
+        }
+        .box1{
+            background-color: aqua;
+        }
+        p{
+            margin: 10px;
+            padding: 5px;
+        }
+        .box2{
+            background-color: antiquewhite;
+        }
+        img{
+            height: 250px;
+            width: 250px;
+        }
+        @media(max-width:500px){
+            .container{
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: start;
+                height: 800px;
+            }
+        }
+        @media(min-width:600px){
+            .container{
+                background-color: blue;
+                display: flex;
+                flex-direction: row;
+            }
+            .box1{
+                display: flex;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis maiores eligendi quos eius accusantium commodi voluptatem, consequatur corporis ducimus. Distinctio!
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, quaerat illo est quia impedit id atque consequuntur culpa? Nesciunt asperiores officiis unde sed corrupti accusantium enim non illo ipsa ab?
+            </p>
+        </div>
+        <div class="box2">
+            <img src="../html-projects/Portfolio/pic1.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
